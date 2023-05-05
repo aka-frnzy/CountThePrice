@@ -6,6 +6,8 @@ const Product = ({ name, price, product }) => {
     }
     const minus = () => {
         setCount((count) => count - 1)
+        if ((count) <= 0)
+            setCount(0)
     }
     return (
         <>
