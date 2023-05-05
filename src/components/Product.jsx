@@ -11,7 +11,7 @@ const Product = ({ name, price, product }) => {
         <>
             <div class="product-list">
                 <div class="product-item">
-                    <img src={product} height={400} alt="Product" />
+                    <img src={product} height={400} alt={name} />
                     <h3>{name}</h3>
                     <p>Price:  Only  ${price}</p>
                     <div class="quantity">
