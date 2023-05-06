@@ -1,13 +1,11 @@
 import { useState } from "react";
-const Product = ({ name, price, product, s }) => {
+const Product = ({ name, price, product }) => {
     const [count, setCount] = useState(0);
     const add = () => {
         setCount((count) => count + 1);
     }
     const minus = () => {
-        setCount((count) => count - 1)
-        if ((count) <= 0)
-            setCount(0)
+        { count > 0 ? setCount(count - 1) : setCount(0) }
     }
     return (
         <>
